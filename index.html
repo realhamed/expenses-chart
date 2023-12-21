@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Chart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#f8e9dd]">
+    <main class="">
+      <section
+        class="balance-section bg-[#ec775f] flex justify-between items-center text-[#fffaf5] rounded-2xl py-4 px-6 sm:w-[385px]">
+        <div>
+          <p class="text-[.85rem] py-1">My balance</p>
+          <p class="text-2xl font-bold">$921.48</p>
+        </div>
+        <img class="h-9" src="images/logo.svg" alt="" />
+      </section>
+      <section class="bg-[#fffaf5] rounded-2xl p-8 pb-9 mt-4">
+        <h1 class="font-bold text-[1.4rem]">Spending - Last 7 days</h1>
+        <div class="border-b-2 border-[#f8e9dd] pb-4 pt-6">
+          <ul id="items-list" class="flex justify-between items-end sm:gap-0 gap-2"></ul>
+          <ul id="days-list" class="flex justify-between"></ul>
+        </div>
+        <div class="flex justify-between pt-6">
+          <div>
+            <p class="text-[.82rem] text-[#93867b]">Total this month</p>
+            <p class="font-bold text-4xl">$478.33</p>
+          </div>
+          <div class="flex flex-col items-end justify-end text-[13px] leading-4">
+            <p class="font-bold">+2.4%</p>
+            <p class="text-[#93867b]">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
